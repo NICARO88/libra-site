@@ -20,13 +20,13 @@
         </a>
       </div>
 
-      <div class="hamburger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+      <button class="hamburger" type="button" onclick="toggleMenu()" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-      <nav class="navbar">
+      <nav id="site-nav" class="site-nav">
         <a href="index.html#servicios" class="nav-link">Servicios</a>
         <a href="portafolio.html" class="nav-link">Portafolio</a>
         <a href="contacto.html" class="nav-link">Contacto</a>
@@ -34,6 +34,7 @@
     </div>
   </div>
 </header>
+
 
 <main>
 
@@ -153,13 +154,6 @@
     </div>
   </div>
 </footer>
-
-<script>
-  function toggleMenu() {
-    const navbar = document.querySelector('.navbar');
-    navbar.classList.toggle('active');
-  }
-</script>
-
+<script src="js/menu.js"></script>
 </body>
 </html>

@@ -14,27 +14,29 @@
 
 <body>
     <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.html" class="logo-link">
-                        <img src="assets/Libra-logo-vector.svg" alt="Libra Logo" class="logo-img" />
-                    </a>
-                </div>
-                <div class="hamburger" onclick="toggleMenu()">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <nav class="navbar">
-                    <a href="index.html#servicios" class="nav-link">Servicios</a>
-                    <a href="portafolio.html" class="nav-link">Portafolio</a>
-                    <a href="contacto.html" class="nav-link">Contacto</a>
-                </nav>
+  <div class="container">
+    <div class="header-content">
+      <div class="logo">
+        <a href="index.html" class="logo-link">
+          <img src="assets/Libra-logo-vector.svg" alt="Libra Logo" class="logo-img" />
+        </a>
+      </div>
 
-            </div>
-        </div>
-    </header>
+      <button class="hamburger" type="button" onclick="toggleMenu()" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html#servicios" class="nav-link">Servicios</a>
+        <a href="portafolio.html" class="nav-link">Portafolio</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
 
     <section class="hero">
         <div class="container">
@@ -338,13 +340,7 @@
             </div>
         </div>
     </footer>
-
-    <script>
-      function toggleMenu() {
-        const navbar = document.querySelector('.navbar');
-        navbar.classList.toggle('active');
-      }
-    </script>
+<script src="js/menu.js"></script>
 </body>
 
 </html>
