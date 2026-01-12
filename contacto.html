@@ -19,7 +19,14 @@
           <img src="assets/Libra-logo-vector.svg" alt="Libra Logo" class="logo-img" />
         </a>
       </div>
-      <nav>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <nav class="navbar">
         <a href="index.html#servicios" class="nav-link">Servicios</a>
         <a href="portafolio.html" class="nav-link">Portafolio</a>
         <a href="contacto.html" class="nav-link">Contacto</a>
@@ -146,6 +153,13 @@
     </div>
   </div>
 </footer>
+
+<script>
+  function toggleMenu() {
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('active');
+  }
+</script>
 
 </body>
 </html>

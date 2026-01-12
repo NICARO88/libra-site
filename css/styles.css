@@ -448,6 +448,33 @@ footer {
     font-size: 15px;
 }
 
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  height: 3px;
+  background: #666666;
+  transition: all 0.3s;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  display: none; /* Hidden by default */
+}
+
+.navbar.active {
+  display: flex; /* Show when active */
+}
+
 @media (max-width: 1024px) {
     .container {
         padding: 0 32px;
@@ -500,6 +527,12 @@ footer {
         display: none;
     }
 
+    nav.active {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .step {
         grid-template-columns: 40px 1fr;
         gap: 24px;
@@ -512,6 +545,10 @@ footer {
     .cta-final-content h2 {
         font-size: 32px;
     }
+
+    .hamburger {
+    display: flex;
+  }
 }
 
 /* ===== Portafolio: layout tipo boceto (video + explicación) ===== */
