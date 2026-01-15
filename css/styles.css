@@ -67,7 +67,9 @@ nav {
 
 .hero {
     padding: 30px 0 180px;
-    background: #fafafa;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../assets/home.webp') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .hero-content {
@@ -81,6 +83,7 @@ h1 {
     font-weight: 400;
     color: #ddb933;
     letter-spacing: -2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for better contrast */
 }
 
 .hero p {
@@ -108,6 +111,7 @@ h1 {
     border: none;
     cursor: pointer;
     letter-spacing: 0.3px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /
 }
 
 .btn-primary {
@@ -132,6 +136,7 @@ h1 {
 section {
     padding: 140px 0;
 }
+
 
 .section-white {
     background: #f1ebe3;
@@ -164,6 +169,25 @@ h3 {
     max-width: 800px;
     margin: 0 auto 80px;
     line-height: 1.7;
+    padding-bottom: 80px;
+}
+
+#servicios {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../assets/servicios.webp') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-attachment: fixed; /* Makes the background image fixed */
+}
+
+#assets {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../assets/portafolio.webp') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-attachment: fixed; /* Makes the background image fixed */
+}
+
+#contacto {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../assets/contacto.webp') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-attachment: fixed; /* Makes the background image fixed */
 }
 
 .problem-section {
@@ -721,6 +745,14 @@ footer {
   color: #999999;
 }
 
+/* Added white transparent background to contacto-form and contacto-directo for better legibility */
+.contacto-form, .contacto-directo {
+    background: rgba(255, 255, 255, 0.8); /* White transparent background */
+    padding: 20px; /* Add some padding for spacing */
+    border-radius: 8px; /* Rounded corners for better aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .contacto-grid {
@@ -811,3 +843,5 @@ footer {
     padding: 10px 0;
   }
 }
+
+
